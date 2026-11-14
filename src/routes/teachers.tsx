@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageTitle } from "@/components/site-chrome";
-import p1 from "@/assets/principal-1.png.asset.json";
-import p2 from "@/assets/principal-2.png.asset.json";
-import p3 from "@/assets/principal-3.png.asset.json";
-import p4 from "@/assets/principal-4.png.asset.json";
+import p1 from "@/assets/principal-1.png";
+import p2 from "@/assets/principal-2.png";
+import p3 from "@/assets/principal-3.png";
+import p4 from "@/assets/principal-4.png";
 import { User } from "lucide-react";
 
 export const Route = createFileRoute("/teachers")({
@@ -19,10 +19,10 @@ export const Route = createFileRoute("/teachers")({
 });
 
 const principals = [
-  { img: p1.url, name: "Prof. A. N. M. Mozammel Hossain", role: "Principal (Acting)", dates: ["15-Oct-2026 – Present"] },
-  { img: p2.url, name: "Prof. Dr. Kazi Fayz Ahamed", role: "Former Principal", dates: ["15-Oct-2025 – 14-Oct-2026"] },
-  { img: p3.url, name: "Prof. Dr. Md. Abu Masud", role: "Former Principal", dates: ["16-Jan-2021 – 14-Oct-2025"] },
-  { img: p4.url, name: "Prof. Md. Shafiqul Islam", role: "Former Principal", dates: ["03-Nov-2019 – 07-Jan-2021", "20-Jan-2019 – 07-Jul-2019"] },
+  { img: p1, name: "Prof. A. N. M. Mozammel Hossain", role: "Principal (Acting)", dates: ["15-Oct-2026 – Present"] },
+  { img: p2, name: "Prof. Dr. Kazi Fayz Ahamed", role: "Former Principal", dates: ["15-Oct-2025 – 14-Oct-2026"] },
+  { img: p3, name: "Prof. Dr. Md. Abu Masud", role: "Former Principal", dates: ["16-Jan-2021 – 14-Oct-2025"] },
+  { img: p4, name: "Prof. Md. Shafiqul Islam", role: "Former Principal", dates: ["03-Nov-2019 – 07-Jan-2021", "20-Jan-2019 – 07-Jul-2019"] },
 ];
 
 function Page() {

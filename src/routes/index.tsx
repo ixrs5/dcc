@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import emblem from "@/assets/emblem.png.asset.json";
+import emblem from "@/assets/emblem.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <section className="animate-fade-up mx-auto flex max-w-3xl flex-col items-center px-6 py-24 text-center">
-      <img src={emblem.url} alt="Dhaka Commerce College emblem" className="frame-classic h-40 w-40 rounded-full" />
+      <img src={emblem} alt="Dhaka Commerce College emblem" className="frame-classic h-40 w-40 rounded-full" />
       <div className="rule-ornament mt-12 w-full text-xs uppercase tracking-[0.35em]">Welcome</div>
       <h1 className="mt-6 text-6xl font-semibold leading-tight text-primary md:text-7xl">
         Dhaka Commerce College

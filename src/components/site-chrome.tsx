@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import emblem from "@/assets/emblem.png.asset.json";
+import emblem from "@/assets/emblem.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -14,7 +14,7 @@ export function SiteHeader() {
     <header className="border-b border-border bg-card">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-5 sm:px-6 md:flex-row md:justify-between">
         <Link to="/" className="flex min-w-0 items-center gap-3 sm:gap-4">
-          <img src={emblem.url} alt="Dhaka Commerce College emblem" className="h-12 w-12 shrink-0 rounded-full sm:h-14 sm:w-14" />
+          <img src={emblem} alt="Dhaka Commerce College emblem" className="h-12 w-12 shrink-0 rounded-full sm:h-14 sm:w-14" />
           <div className="min-w-0">
             <div className="font-serif text-xl font-semibold tracking-wide text-primary sm:text-2xl">
               Dhaka Commerce College

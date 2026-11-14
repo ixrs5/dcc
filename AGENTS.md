@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+Keep site images as bundled source assets rather than externally hosted pointers so downloaded GitHub copies remain self-contained on other hosts.

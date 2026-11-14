@@ -2,10 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { PageTitle } from "@/components/site-chrome";
-import a1 from "@/assets/image-2.png.asset.json";
-import a2 from "@/assets/image-3.png.asset.json";
-import a3 from "@/assets/image-4.png.asset.json";
-import a4 from "@/assets/image-5.png.asset.json";
+import a1 from "@/assets/image-2.png";
+import a2 from "@/assets/image-3.png";
+import a3 from "@/assets/image-4.png";
+import a4 from "@/assets/image-5.png";
 
 const photos = [a1, a2, a3, a4];
 
@@ -41,7 +41,7 @@ function Achievements() {
             >
               {photos.map((p, k) => (
                 <div key={k} className="aspect-[4/3] w-full shrink-0 bg-muted">
-                  <img src={p.url} alt={`Achievement ${k + 1}`} className="h-full w-full object-contain" />
+                  <img src={p} alt={`Achievement ${k + 1}`} className="h-full w-full object-contain" />
                 </div>
               ))}
             </div>
